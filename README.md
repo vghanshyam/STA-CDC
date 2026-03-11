@@ -53,11 +53,5 @@ Setup Slack = 10 − 0.3 − 0.5 − 7
 
 **Result:** 2.2 ns ✅ (Positive Slack → Timing Met)
 ## 📡 Part 4 — Hold Slack Calculation
-Hold Slack = Data Arrival Time − Data Required Time (hold)
--Data Arrival Time = T_launch + T_clk2q + T_logic
--Data Required Time (hold) = T_capture + T_hold
-                           = T_launch + T_hold (same clock edge for hold)
-Hold Slack = T_clk2q + T_logic − T_hold
+Hold Slack = Data Arrival Time - Data Required Time (hold)
 
-- If `Slack ≥ 0` → **Timing MET** ✅  
-- If `Slack < 0` → **Timing VIOLATED** ❌
